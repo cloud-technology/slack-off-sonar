@@ -1,0 +1,11 @@
+title: "Deploy cloud function role"
+description: "custom role to deploy cloud function"
+stage: "GA"
+includedPermissions:
+- cloudfunctions.functions.create
+- cloudfunctions.functions.get
+- cloudfunctions.functions.update
+- cloudfunctions.functions.sourceCodeSet
+- cloudfunctions.functions.getIamPolicy
+- cloudfunctions.functions.setIamPolicy
+- cloudfunctions.operations.get
