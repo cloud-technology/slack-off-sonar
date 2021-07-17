@@ -1,7 +1,7 @@
 # slack-off-sonar
 Easily view sonar report on gitlab
 
-![SystemArchitecture](https://raw.githubusercontent.com/cloud-technology/slack-off-sonar/main/docs/SystemArchitecture.png)
+![SystemArchitecture](https://i.imgur.com/fWp5fM4.jpg)
 
 ## Spring Cloud Function
 
