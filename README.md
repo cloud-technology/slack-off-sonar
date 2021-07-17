@@ -387,10 +387,3 @@ In the analysis phase, the parameters at the beginning of sonar.analysis are add
 [GoogleCloudPlatform/functions-framework-java](https://github.com/GoogleCloudPlatform/functions-framework-java)  
 [GCP - 使用 Github Actions 部署 React 到 Cloud Run](https://dotblogs.com.tw/explooosion/2020/10/09/143330)  
 [google-github-actions/setup-gcloud](https://github.com/google-github-actions/setup-gcloud)  
-
-
-
-
-
-
-Q9sNAY2n
