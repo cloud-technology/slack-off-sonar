@@ -39,10 +39,10 @@ EOF
 
 ### Register Function Bean
 ``` java
-	@Bean
-	public Function<String, String> uppercase() {
-		return value -> value.toUpperCase();
-	}
+@Bean
+public Function<String, String> uppercase() {
+	return value -> value.toUpperCase();
+}
 ```
 
 ### Test in your local environments
@@ -146,10 +146,10 @@ public class MyJsonMessageConverter extends AbstractMessageConverter {
 ```
 Than Register MyJsonMessageConverter Bean
 ``` java
-	@Bean
-	public MyJsonMessageConverter customMessageConverter() {
-		return new MyJsonMessageConverter(new JacksonMapper(new ObjectMapper()));
-	}
+@Bean
+public MyJsonMessageConverter customMessageConverter() {
+	return new MyJsonMessageConverter(new JacksonMapper(new ObjectMapper()));
+}
 ```
 
 ## Deploy to Google Cloud Function
@@ -271,6 +271,7 @@ export REGION=asia-east1
 export FUNCTION_NAME=function-sample-gcp-http
 export GITLAB_TOKEN=12345678
 export SONAR_TOKEN=12345678974651468487To=
+export SONAR_URL=https://sonarqube.com.tw/api
 
 gcloud functions deploy ${FUNCTION_NAME} \
 --region=${REGION} \
@@ -281,7 +282,7 @@ gcloud functions deploy ${FUNCTION_NAME} \
 --trigger-http \
 --source target/deploy \
 --memory 512MB \
---set-env-vars gitlabToken=${GITLAB_TOKEN},sonarToken=${SONAR_TOKEN}
+--set-env-vars gitlabToken=${GITLAB_TOKEN},sonarToken=${SONAR_TOKEN},sonarUrl=${SONAR_URL}
 ```
 
 ### Custom roles
@@ -387,3 +388,9 @@ In the analysis phase, the parameters at the beginning of sonar.analysis are add
 [GCP - 使用 Github Actions 部署 React 到 Cloud Run](https://dotblogs.com.tw/explooosion/2020/10/09/143330)  
 [google-github-actions/setup-gcloud](https://github.com/google-github-actions/setup-gcloud)  
 
+
+
+
+
+
+Q9sNAY2n
