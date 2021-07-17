@@ -1,6 +1,8 @@
 # slack-off-sonar
 Easily view sonar report on gitlab
 
+![SystemArchitecture](https://raw.githubusercontent.com/cloud-technology/slack-off-sonar/main/docs/SystemArchitecture.png)
+
 ## Spring Cloud Function
 
 ### Why use Spring Cloud Function
