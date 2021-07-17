@@ -1,5 +1,6 @@
 ## This Project Architecture
-This project is to make it easier for people to read SonarQube analysis results in GitLab, so the design is as follows.
+This project is to make it easier for people to read SonarQube analysis results in GitLab, so the design is as follows.  
+  
 ![SystemArchitecture](https://i.imgur.com/fWp5fM4.jpg)
 
 ## Spring Cloud Function
