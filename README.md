@@ -224,7 +224,7 @@ etag: BwXHGHgC9CI=
 version: 1
 ```
 
-[Creating service account keys](https://cloud.google.com/iam/docs/creating-managing-service-account-keys)
+[Creating service account keys](https://cloud.google.com/iam/docs/creating-managing-service-account-keys)  
 SYNOPSIS
 ``` bash
 gcloud iam service-accounts keys create key-file \
@@ -288,7 +288,7 @@ gcloud functions deploy ${FUNCTION_NAME} \
 ```
 
 ### Custom roles
-If you want to reduce the permissions, you can refer to [Creating and managing custom roles](https://cloud.google.com/iam/docs/creating-custom-roles)  
+If you want to reduce the permissions, you can refer to [Creating and managing custom roles](https://cloud.google.com/iam/docs/creating-custom-roles) and [gcp/DeployRole.yml](https://github.com/cloud-technology/slack-off-sonar/blob/main/gcp/DeployRole.yml)  
 
 SYNOPSIS
 ``` bash
@@ -309,18 +309,16 @@ gcloud iam roles create ${ROLE_ID} --project=${PROJECT_ID} \
 (Example output)
 ``` bash
 Created role [SamCloudfunctionTest].
-description: My custom role description.
+description: custom role to deploy cloud function
 etag: BwXHNs_mK1Q=
 includedPermissions:
 - cloudfunctions.functions.create
 - cloudfunctions.functions.get
-- cloudfunctions.functions.list
-- cloudfunctions.functions.update
-- cloudfunctions.functions.sourceCodeSet
-- cloudfunctions.operations.get
-name: projects/cloudfunction-305305/roles/SamCloudfunctionTest
-stage: ALPHA
-title: Deploy Finction test role
+.
+.
+.
+stage: GA
+title: Deploy cloud function role
 ```
 
 if you need update role
